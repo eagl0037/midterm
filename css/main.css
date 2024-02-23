@@ -1,0 +1,77 @@
+
+/*
+Always Center the Layout
+Set a maximimum width of 450px
+and Center the content always
+*/
+body{
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/*
+Color Header orange and remove
+margin from h1
+*/
+header{
+  background: orange;
+}
+header h1{
+  margin: 0;
+}
+
+/*
+Normally we let the content determine the height of our layouts, but for this example we've set explicit heights.
+*/
+.content{
+  height: 200px;
+  background: yellow;
+}
+.sidebar{
+  height: 200px;
+  background: green;
+}
+
+/*
+Color the footer orange and
+Remove the margin from the footer paragraph
+*/
+footer{
+  background: orange;
+}
+footer p{
+  margin: 0;
+}
+
+
+
+/*
+Once the screensize is 450px wide
+Set a width on the content and sidebar,
+float them beside eachother,
+clear the sidebar's float from the footer
+*/
+@media screen and (min-width: 450px){
+  .content{
+    width: 350px;
+  }
+  
+  .sidebar{
+    width: 100px;
+  }
+  
+  /*
+  Float both .content and .sidebar left
+  */
+  .content,
+  .sidebar{
+    float: left;
+  }
+  
+  /*
+  Clear the float on the sidebar
+  */
+  footer{
+    clear: left;
+  }
+}
