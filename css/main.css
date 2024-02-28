@@ -25,7 +25,7 @@ h2 {
 header {
 
   position: relative;
-  background-image: url(../images/lone-starfish.jpg);
+  background-image: url(../images/lone-starfish-wide.jpg);
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -192,7 +192,7 @@ footer {
   text-align: right;
   display: flex;
   justify-content: flex-end;
-  background-color: brown;
+  background-color: lightskyblue;
   color: beige;
   position: relative;
   bottom: 0;
