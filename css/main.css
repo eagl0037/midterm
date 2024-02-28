@@ -1,77 +1,217 @@
-
-/*
-Always Center the Layout
-Set a maximimum width of 450px
-and Center the content always
-*/
-body{
-  max-width: 450px;
-  margin: 0 auto;
+* {
+  box-sizing: border-box;
 }
 
-/*
-Color Header orange and remove
-margin from h1
-*/
-header{
-  background: orange;
+html {
+  font-size: 14px;
 }
-header h1{
+
+body {
+  
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: aqua;
+  margin: 0%;
+  padding: 0%;
+
+}
+
+h2 {
+
+  font-weight: bold;
+}
+
+header {
+
+  position: relative;
+  background-image: url(../images/lone-starfish.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+  padding: 0%;
+}
+
+.header-image {
+
+  width: 250px;
+  height: auto;
+  margin: 0% auto;
+}
+
+header h1 {
+
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px black rgba(0, 0, 0, 0.5);
+  margin: 0%;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  transform: translateX(-50%);
+}
+
+nav ul {
+
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgba( 255, 255, 255, 0.7);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+  position: relative;
+}
+
+nav ul li a {
+
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-container {
+
+  background-color: aliceblue;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: auto;
+  font-weight: bold;
+}
+
+.main-container > * {
+  padding: 1rem;
+  margin: 0%;
+}
+
+article {
+  padding: 0;
   margin: 0;
 }
 
-/*
-Normally we let the content determine the height of our layouts, but for this example we've set explicit heights.
-*/
-.content{
-  height: 200px;
-  background: yellow;
-}
-.sidebar{
-  height: 200px;
-  background: green;
+.article-image {
+
+  float: left;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  width: 250px;
+  height: auto;
 }
 
-/*
-Color the footer orange and
-Remove the margin from the footer paragraph
-*/
-footer{
-  background: orange;
-}
-footer p{
-  margin: 0;
+article h2 {
+
+   margin-bottom: 1rem;
 }
 
+.clearfix::after {
+
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.facts {
+
+  padding: 1rem;
+}
+
+.facts ul {
+
+  padding-left: 0%;
+  list-style-type: disc;
+  margin-left: 2 rem;
+}
+
+.facts li {
+
+  margin-bottom: 0.5rem;
+}
+
+.radio-buttons {
+  display: flex;
+}
+
+form button {
+
+  padding: 10px 20 px;
+  background-color: blueviolet;
+  color: azure;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: auto;
+  display: inline-block;
+}
 
 
-/*
-Once the screensize is 450px wide
-Set a width on the content and sidebar,
-float them beside eachother,
-clear the sidebar's float from the footer
-*/
-@media screen and (min-width: 450px){
-  .content{
-    width: 350px;
-  }
-  
-  .sidebar{
-    width: 100px;
-  }
-  
-  /*
-  Float both .content and .sidebar left
-  */
-  .content,
-  .sidebar{
-    float: left;
-  }
-  
-  /*
-  Clear the float on the sidebar
-  */
-  footer{
-    clear: left;
-  }
+form {
+
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+form input[type="text"],
+form input [type="email"],
+form textarea {
+
+  padding: 0.5rem;
+}
+
+footer {
+
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  background-color: brown;
+  color: beige;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px;
+  margin-top: 1rem;
+
+}
+
+.main-container {
+  background-color: aliceblue;
+  padding: 0;
+}
+
+.main-container > section,
+.main-container > footer,
+.main-container > header,
+.main-container > nav {
+
+  padding: 20px;
 }
