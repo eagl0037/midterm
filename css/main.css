@@ -11,7 +11,7 @@ body {
   font-family: arial , sans-serif;
   line-height: 2;
   color: #333;
-  background-color: aqua;
+  background-color: #aad4cf;
   margin: 0%;
   padding: 0%;
 
@@ -148,20 +148,7 @@ article h2 {
   display: flex;
 }
 
-form button {
 
-  padding: 10px 20 px;
-  background-color: blueviolet;
-  color: azure;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  width: auto;
-  display: inline-block;
-}
 
 
 form {
@@ -171,13 +158,27 @@ form {
   background-color: white;
 }
 
-form label,
-form input,
-form textarea,
-form button {
+form label {
   display: block;
   margin-bottom: 0.5rem;
   width: 100%;
+}
+form input {
+
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+form textarea {
+
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+form button {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 10%;
 }
 
 form input[type="text"],
@@ -192,7 +193,7 @@ footer {
   text-align: right;
   display: flex;
   justify-content: flex-end;
-  background-color: lightskyblue;
+  background-color: #aad4cf; 
   color: beige;
   position: relative;
   bottom: 0;
@@ -204,7 +205,7 @@ footer {
 }
 
 .main-container {
-  background-color: aliceblue;
+  background-color: aad4cf;
   padding: 0;
 }
 
